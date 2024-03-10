@@ -12,18 +12,22 @@ ButtonForMultiplacation.addEventListener("click", function () {
     if (value && value2) {
         let result = value *= value2
         resultOfThecode.value = result;
+        resultOfThecode.disabled=true;
     } else {
         resultOfThecode.value = "Please enter valid numbers.";
+        resultOfThecode.disabled=true;
     }
 });
 ButtonForDivision.addEventListener("click", function () {
     let value = parseInt(FirstInput.value);
     let value2 = parseInt(SecondInput.value)
-    if (value && value2) {
+    if (value&&value2){
         let result = value /= value2
         resultOfThecode.value = result;
+        resultOfThecode.disabled=true;
     } else {
         resultOfThecode.value = "Please enter valid numbers.";
+        resultOfThecode.disabled=true;
     }
 });
 ButtonForAddition.addEventListener("click", function () {
@@ -32,8 +36,11 @@ ButtonForAddition.addEventListener("click", function () {
     if (value && value2) {
         let result = value += value2
         resultOfThecode.value = result;
+        resultOfThecode.disabled=true;
+
     } else {
         resultOfThecode.value = "Please enter valid numbers.";
+        resultOfThecode.disabled=true;
     }
 });
 ButtonForSubstraction.addEventListener("click", function () {
@@ -42,8 +49,12 @@ ButtonForSubstraction.addEventListener("click", function () {
     if (value && value2) {
         let result = value -= value2
         resultOfThecode.value = result;
+        resultOfThecode.disabled=true;
+
     } else {
         resultOfThecode.value = "Please enter valid numbers.";
+        resultOfThecode.disabled=true;
+
     }
 });
 
